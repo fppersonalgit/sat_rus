@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* General styles */
+      body {
+        background-color: #000080;
+        color: #ffffff;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 14px;
+        margin: 0;
+      }
+      a {
+          text-decoration: none;
+          color: white;
+      }
+
+      .github_icon {
+          width : 24px;
+          height :24px;
+      }
+
+      /* Content container styles */
+      .content-container {
+        padding: 0 20px;
+      }
+
+      /* Table styles */
+      table {
+        border-collapse: collapse;
+        border: none;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      th {
+        background-color: #000080;
+        color: #ffff00;
+        font-weight: bold;
+        border: none;
+        padding: 5px;
+      }
+
+      td {
+        border: none;
+        padding: 5px;
+      }
+
+      tr:hover {
+        background-color: #008080;
+
+      }
+      tr:hover {
+        background-color: #008080;
+
+      }
+
+      /* Footer styles */
+      .footer {
+              background-color: #000000;
+              color: #ffffff;
+              font-size: 14px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 30px;
+              width: 100%;
+              position: fixed;
+              bottom: 0;
+            }
+
+      .footer a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        color: #008080;
+      }
+
+      .path {
+              background-color: black;
+              color: white;
+              width: 100%;
+              padding: 10px;
+            }
+
+      /* MS-DOS style cursor */
+      .ms-dos-cursor {
+        color: white;
+        background-color: white;
+        width: 1px;
+        height: 14px;
+        display: inline-block;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        49% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .astro {
+              width : 400px;
+              height :400px;
+              padding-left : 450px;
+
+
+
+      }
+      .soft_skills {
+           color: #ffff00;
+           font-weight: bold;
+
+      }
+
+      .hard_skills {
+           color : #00ff00;
+           font-weight: bold;
+
+      }
+
+      .postpic {
+                width : 400px;
+                height :400px;
+
+      }
+
+      .postpic1 {
+                width : 400px;
+                height :400px;
+
+      }
+      .postpic2 {
+                width : 400px;
+                height :400px;
+
+      }
+      .playstore_icon {
+                width : 24px;
+                height : 24px;
+      }
+      .appstore_icon {
+                width : 24px;
+                height : 24px;
+                padding-bottom : -10px;
+
+      }
+      .links_block{
+
+       display: flex;
+       align-items: center;
+      }
+      .tags{
+
+        color: #00ff00;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="path">{% block path %}Fedor Petrenko/{% endblock %}</div>
+    <div class="content-container">
+
+
+
+      {% block content%}
+
+      {% endblock %}
+    </div>
+
+    <div class="footer">
+      <div>
+        Email: <a href="mailto:theodorpetrenko@cloud.com">theodorpetrenko@cloud.com</a>
+      </div>
+      <div>Location: Phuket, Thailand</div>
+      <div>
+        <a href="https://www.linkedin.com/in/fedor-petrenko-934b29247/">LinkedIn</a> | <a href="https://www.instagram.com/theodorosone/?hl=en">Instagram</a>
+      </div>
+    </div>
+  </body>
+</html>
